@@ -9,4 +9,6 @@
 #  /data/lower_dir /data/mount_dir
 #  /data/lower_dir /data/mount_dir rw
 #  /data/lower_dir /data/mount_dir rw 0755 root root
-/data/data /data/data 
+/data/data /data/data
+/data/system /data/system
+/data/home /data/home

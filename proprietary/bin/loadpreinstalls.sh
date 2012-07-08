@@ -6,9 +6,22 @@ DATA_HASH_DIR=/data/preinstall_md5
 PRELOAD_DONE_PROP=sys.preinstall.done
 PRELOAD_LOG_FILE=$DATA_HASH_DIR/log.txt
 
+setprop $PRELOAD_DONE_PROP 0
+
 umask 003
 
 mkdir $DATA_HASH_DIR
+
+CHECK_DEVICE_ENCRYPT=vold.decrypt
+device_encrypt=`getprop $CHECK_DEVICE_ENCRYPT`
+if [ -z "$device_encrypt" -o "$device_encrypt" = "trigger_restart_framework" ]; then
+    echo "Device is not encrypted or already decrypted ($device_encrypt)"
+    echo "Device is not encrypted or already decrypted ($device_encrypt)" >> $PRELOAD_LOG_FILE
+else
+    echo "Device is being encrypted or is not decrypted yet ($device_encrypt). install skipped"
+    echo "Device is being encrypted or is not decrypted yet ($device_encrypt). install skipped" >> $PRELOAD_LOG_FILE
+    exit 1
+fi
 
 for file in `ls $PRELOAD_APP_DIR`; do
     echo "$file: comparing $PRELOAD_HASH_DIR/$file.md5 and $DATA_HASH_DIR/$file.md5"

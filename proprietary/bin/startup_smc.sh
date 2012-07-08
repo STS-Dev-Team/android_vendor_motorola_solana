@@ -57,14 +57,41 @@ if [ ! -f /system/bin/tf_daemon ] ; then
    exit
 fi
 
+###########################################
+# Backup the SMC keystore and EMT keystore
+###########################################
+if [ -f /system/bin/mot_sst_state_parser ] ; then
+   echo "Running Motorola SST key backup..."
+   if [ ! -d /pds/mot_sst ] ; then
+      mkdir /pds/mot_sst
+   fi
+   chmod 700 /pds/mot_sst
+   /system/bin/mot_sst_state_parser
+fi
+
+
+
 ############################################
 # Default: start up Motorola signed SMC PA #
 # If it fails, start up EMU version        #
 ############################################
+
+# Determine if SMC with 8Mb carve-out (for secure Playready) is needed or not.
+CMDLINE=`cat /proc/cmdline`
+HS_SMC=/system/etc/smc_pa_pk_4_ipa.bin
+for i in ${CMDLINE}
+do
+  if [ "${i}" = "drmplay=1" ]
+  then
+      HS_SMC=/system/etc/smc_pa_pk_4_8Mb_ipa.bin
+      break
+  fi
+done
+
 USE_EMU=0
-if [ -f /system/etc/smc_pa_pk_4_ipa.bin ] ; then
+if [ -f ${HS_SMC} ] ; then
    echo "Starting Motorola Signed SMC-Crypto PA..."
-   /system/bin/smc_pa_ctrl -c /system/etc/smc_android_cfg.ini start /system/etc/smc_pa_pk_4_ipa.bin
+   /system/bin/smc_pa_ctrl -c /system/etc/smc_android_cfg.ini start ${HS_SMC}
    ret=$?
    if [ $ret -eq 0 ]
    then
@@ -74,7 +101,7 @@ if [ -f /system/etc/smc_pa_pk_4_ipa.bin ] ; then
       USE_EMU=1
    fi
 else
-   echo "Motorola Signed SMC PA /system/bin/smc_pa_pk_4_ipa.bin is not found"
+   echo "Motorola Signed SMC PA ${HS_SMC} is not found"
    USE_EMU=1
 fi
 

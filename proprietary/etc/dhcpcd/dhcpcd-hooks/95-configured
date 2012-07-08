@@ -18,6 +18,7 @@ BOUND|INFORM|REBIND|REBOOT|RENEW|TIMEOUT)
 
 IPV4LL)
     setprop dhcp.${interface}.ipaddress "${new_ip_address}"
+    setprop dhcp.${interface}.leasetime "2147483647"
     setprop dhcp.${interface}.result "limited"
     ;;
 

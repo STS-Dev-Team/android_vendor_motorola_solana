@@ -6,4 +6,9 @@
         <group gid="mot_tpapi"/>
         <group gid="mot_secclkd"/>
     </permission>
+    <permission name="com.motorola.permission.ACCESS_DRM" >
+        <group gid="mot_drm" />
+        <group gid="mot_tpapi"/>
+        <group gid="mot_secclkd"/>
+    </permission>
 </permissions>            
