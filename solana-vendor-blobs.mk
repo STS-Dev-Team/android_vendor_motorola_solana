@@ -167,23 +167,23 @@ vendor/motorola/solana/proprietary/lib/libxmpcore.so:/system/lib/libxmpcore.so \
 vendor/motorola/solana/proprietary/lib/libportaljni.so:/system/lib/libportaljni.so \
 
 # RIL files
-#PRODUCT_COPY_FILES += \
-#vendor/motorola/solana/proprietary/bin/base64:/system/bin/base64 \
-#vendor/motorola/solana/proprietary/bin/extract-embedded-files:/system/bin/extract-embedded-files \
-#vendor/motorola/solana/proprietary/bin/mm-wrigley-qc-dump.sh:/system/bin/mm-wrigley-qc-dump.sh \
-#vendor/motorola/solana/proprietary/bin/vril-dump:/system/bin/vril-dump \
-#vendor/motorola/solana/proprietary/bin/wrigley-diag.sh:/system/bin/wrigley-diag.sh \
-#vendor/motorola/solana/proprietary/bin/wrigley-dump.sh:/system/bin/wrigley-dump.sh \
-#vendor/motorola/solana/proprietary/bin/wrigley-fetch-mpr.sh:/system/bin/wrigley-fetch-mpr.sh \
-#vendor/motorola/solana/proprietary/lib/libbabysit.so:/system/lib/libbabysit.so \
-#vendor/motorola/solana/proprietary/lib/libb64.so:/system/lib/libb64.so \
-#vendor/motorola/solana/proprietary/lib/lib-mot-lte-ril.so:/system/lib/lib-mot-lte-ril.so \
-#vendor/motorola/solana/proprietary/lib/libmoto_nwif_ril.so:/system/lib/libmoto_nwif_ril.so \
-#vendor/motorola/solana/proprietary/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
-#vendor/motorola/solana/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
-#vendor/motorola/solana/proprietary/lib/libmotdb.so:/system/lib/libmotdb.so \
-#vendor/motorola/solana/proprietary/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.so \
-#vendor/motorola/solana/proprietary/lib/libims_client_jni.so:/system/lib/libims_client_jni.so \
+PRODUCT_COPY_FILES += \
+vendor/motorola/solana/proprietary/bin/base64:/system/bin/base64 \
+vendor/motorola/solana/proprietary/bin/extract-embedded-files:/system/bin/extract-embedded-files \
+vendor/motorola/solana/proprietary/bin/mm-wrigley-qc-dump.sh:/system/bin/mm-wrigley-qc-dump.sh \
+vendor/motorola/solana/proprietary/bin/vril-dump:/system/bin/vril-dump \
+vendor/motorola/solana/proprietary/bin/wrigley-diag.sh:/system/bin/wrigley-diag.sh \
+vendor/motorola/solana/proprietary/bin/wrigley-dump.sh:/system/bin/wrigley-dump.sh \
+vendor/motorola/solana/proprietary/bin/wrigley-fetch-mpr.sh:/system/bin/wrigley-fetch-mpr.sh \
+vendor/motorola/solana/proprietary/lib/libbabysit.so:/system/lib/libbabysit.so \
+vendor/motorola/solana/proprietary/lib/libb64.so:/system/lib/libb64.so \
+vendor/motorola/solana/proprietary/lib/lib-mot-lte-ril.so:/system/lib/lib-mot-lte-ril.so \
+vendor/motorola/solana/proprietary/lib/libmoto_nwif_ril.so:/system/lib/libmoto_nwif_ril.so \
+vendor/motorola/solana/proprietary/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
+vendor/motorola/solana/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
+vendor/motorola/solana/proprietary/lib/libmotdb.so:/system/lib/libmotdb.so \
+vendor/motorola/solana/proprietary/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.so \
+vendor/motorola/solana/proprietary/lib/libims_client_jni.so:/system/lib/libims_client_jni.so \
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
