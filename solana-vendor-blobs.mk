@@ -101,7 +101,6 @@ vendor/motorola/solana/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr
 vendor/motorola/solana/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
 vendor/motorola/solana/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
 
-#vendor/motorola/solana/proprietary/lib/libWifiAPHardware.so:/system/lib/libWifiAPHardware.so \
 # system/lib
 PRODUCT_COPY_FILES += \
 vendor/motorola/solana/proprietary/lib/libadkutils.so:/system/lib/libadkutils.so \
@@ -164,15 +163,15 @@ vendor/motorola/solana/proprietary/lib/libportaljni.so:/system/lib/libportaljni.
 
 # RIL files
 PRODUCT_COPY_FILES += \
-vendor/motorola/solana/proprietary/lib/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
-vendor/motorola/solana/proprietary/lib/libmot_atcmd_mflex.so:/system/lib/libmot_atcmd_mflex.so \
-vendor/motorola/solana/proprietary/lib/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
-vendor/motorola/solana/proprietary/lib/libmoto_netutil.so:/system/lib/libmoto_netutil.so \
-vendor/motorola/solana/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
-vendor/motorola/solana/proprietary/lib/libmotodbgutils.so:/system/lib/libmotodbgutils.so \
-vendor/motorola/solana/proprietary/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
-vendor/motorola/solana/proprietary/lib/librds_util.so:/system/lib/librds_util.so \
-vendor/motorola/solana/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
+vendor/motorola/solana/proprietary/ril/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
+vendor/motorola/solana/proprietary/ril/libmot_atcmd_mflex.so:/system/lib/libmot_atcmd_mflex.so \
+vendor/motorola/solana/proprietary/ril/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
+vendor/motorola/solana/proprietary/ril/libmoto_netutil.so:/system/lib/libmoto_netutil.so \
+vendor/motorola/solana/proprietary/ril/libmoto_ril.so:/system/lib/libmoto_ril.so \
+vendor/motorola/solana/proprietary/ril/libmotodbgutils.so:/system/lib/libmotodbgutils.so \
+vendor/motorola/solana/proprietary/ril/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
+vendor/motorola/solana/proprietary/ril/librds_util.so:/system/lib/librds_util.so \
+vendor/motorola/solana/proprietary/ril/libril_rds.so:/system/lib/libril_rds.so \
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
