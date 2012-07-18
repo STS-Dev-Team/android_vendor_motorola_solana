@@ -129,13 +129,12 @@ vendor/motorola/solana/proprietary/lib/libhdmi.so:/system/lib/libhdmi.so \
 vendor/motorola/solana/proprietary/lib/libimage_jni.so:/system/lib/libimage_jni.so \
 vendor/motorola/solana/proprietary/lib/libjni_nwp.so:/system/lib/libjni_nwp.so \
 vendor/motorola/solana/proprietary/lib/libmetainfo.so:/system/lib/libmetainfo.so \
-vendor/motorola/solana/proprietary/lib/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
 vendor/motorola/solana/proprietary/lib/libmot_bluetooth_jni.so:/system/lib/libmot_bluetooth_jni.so \
+vendor/motorola/solana/proprietary/lib/libmot_bthid_jni.so:/system/lib/libmot_bthid_jni.so \
+vendor/motorola/solana/proprietary/lib/libmot_btpan_jni.so:/system/lib/libmot_btpan_jni.so \
+vendor/motorola/solana/proprietary/lib/libmot_led.so:/system/lib/libmot_led.so \
 vendor/motorola/solana/proprietary/lib/libmotdrm1.so:/system/lib/libmotdrm1.so \
 vendor/motorola/solana/proprietary/lib/libmotdrm1_jni.so:/system/lib/libmotdrm1_jni.so \
-vendor/motorola/solana/proprietary/lib/libmotodbgutils.so:/system/lib/libmotodbgutils.so \
-vendor/motorola/solana/proprietary/lib/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
-vendor/motorola/solana/proprietary/lib/libmoto_netutil.so:/system/lib/libmoto_netutil.so \
 vendor/motorola/solana/proprietary/lib/libmss.so:/system/lib/libmss.so \
 vendor/motorola/solana/proprietary/lib/libmss.so.sig:/system/lib/libmss.so.sig \
 vendor/motorola/solana/proprietary/lib/libnativedrm1.so:/system/lib/libnativedrm1.so \
@@ -145,11 +144,8 @@ vendor/motorola/solana/proprietary/lib/libpanorama_jni.so:/system/lib/libpanoram
 vendor/motorola/solana/proprietary/lib/libPhotoEditor.so:/system/lib/libPhotoEditor.so \
 vendor/motorola/solana/proprietary/lib/libphotoflow.so:/system/lib/libphotoflow.so \
 vendor/motorola/solana/proprietary/lib/libpkip.so:/system/lib/libpkip.so \
-vendor/motorola/solana/proprietary/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
 vendor/motorola/solana/proprietary/lib/libprovlib.so:/system/lib/libprovlib.so \
 vendor/motorola/solana/proprietary/lib/libquicksec.so:/system/lib/libquicksec.so \
-vendor/motorola/solana/proprietary/lib/librds_util.so:/system/lib/librds_util.so \
-vendor/motorola/solana/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
 vendor/motorola/solana/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
 vendor/motorola/solana/proprietary/lib/libsensorhub_jni.so:/system/lib/libsensorhub_jni.so \
 vendor/motorola/solana/proprietary/lib/libsmapi.so:/system/lib/libsmapi.so \
@@ -168,22 +164,15 @@ vendor/motorola/solana/proprietary/lib/libportaljni.so:/system/lib/libportaljni.
 
 # RIL files
 PRODUCT_COPY_FILES += \
-vendor/motorola/solana/proprietary/bin/base64:/system/bin/base64 \
-vendor/motorola/solana/proprietary/bin/extract-embedded-files:/system/bin/extract-embedded-files \
-vendor/motorola/solana/proprietary/bin/mm-wrigley-qc-dump.sh:/system/bin/mm-wrigley-qc-dump.sh \
-vendor/motorola/solana/proprietary/bin/vril-dump:/system/bin/vril-dump \
-vendor/motorola/solana/proprietary/bin/wrigley-diag.sh:/system/bin/wrigley-diag.sh \
-vendor/motorola/solana/proprietary/bin/wrigley-dump.sh:/system/bin/wrigley-dump.sh \
-vendor/motorola/solana/proprietary/bin/wrigley-fetch-mpr.sh:/system/bin/wrigley-fetch-mpr.sh \
-vendor/motorola/solana/proprietary/lib/libbabysit.so:/system/lib/libbabysit.so \
-vendor/motorola/solana/proprietary/lib/libb64.so:/system/lib/libb64.so \
-vendor/motorola/solana/proprietary/lib/lib-mot-lte-ril.so:/system/lib/lib-mot-lte-ril.so \
-vendor/motorola/solana/proprietary/lib/libmoto_nwif_ril.so:/system/lib/libmoto_nwif_ril.so \
-vendor/motorola/solana/proprietary/lib/libmoto_qmi_ril.so:/system/lib/libmoto_qmi_ril.so \
+vendor/motorola/solana/proprietary/lib/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
+vendor/motorola/solana/proprietary/lib/libmot_atcmd_mflex.so:/system/lib/libmot_atcmd_mflex.so \
+vendor/motorola/solana/proprietary/lib/libmoto_mdmctrl.so:/system/lib/libmoto_mdmctrl.so \
+vendor/motorola/solana/proprietary/lib/libmoto_netutil.so:/system/lib/libmoto_netutil.so \
 vendor/motorola/solana/proprietary/lib/libmoto_ril.so:/system/lib/libmoto_ril.so \
-vendor/motorola/solana/proprietary/lib/libmotdb.so:/system/lib/libmotdb.so \
-vendor/motorola/solana/proprietary/lib/moto-ril-multimode.so:/system/lib/moto-ril-multimode.so \
-vendor/motorola/solana/proprietary/lib/libims_client_jni.so:/system/lib/libims_client_jni.so \
+vendor/motorola/solana/proprietary/lib/libmotodbgutils.so:/system/lib/libmotodbgutils.so \
+vendor/motorola/solana/proprietary/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
+vendor/motorola/solana/proprietary/lib/librds_util.so:/system/lib/librds_util.so \
+vendor/motorola/solana/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
@@ -198,13 +187,3 @@ vendor/motorola/solana/proprietary/xbin/drm1_func_test:/system/xbin/drm1_func_te
 #vendor/motorola/solana/proprietary/xbin/nc:/system/xbin/nc \
 
 
-# Camera libs we need for now
-#PRODUCT_COPY_FILES += \
-#vendor/motorola/solana/proprietary/lib/libpostcapimgproc_intf.so:/system/lib/libpostcapimgproc_intf.so \
-#vendor/motorola/solana/proprietary/lib/hw/camera.omap4.so:/system/lib/hw/camera.omap4.so \
-
-
-# Load TCMD libs
-#PRODUCT_COPY_FILES += \
-#vendor/motorola/solana/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
-#vendor/motorola/solana/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
