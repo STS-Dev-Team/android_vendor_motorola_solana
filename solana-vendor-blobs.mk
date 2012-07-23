@@ -185,4 +185,12 @@ vendor/motorola/solana/proprietary/xbin/drm1_func_test:/system/xbin/drm1_func_te
 #vendor/motorola/solana/proprietary/xbin/dexdump:/system/xbin/dexdump \
 #vendor/motorola/solana/proprietary/xbin/nc:/system/xbin/nc \
 
+# Load TCMD libs
+PRODUCT_COPY_FILES += \
+vendor/motorola/solana/proprietary/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
+vendor/motorola/solana/proprietary/lib/libfm_stack.so:/system/lib/libfm_stack.so \
+vendor/motorola/solana/proprietary/lib/libfmchr.so:/system/lib/libfmchr.so \
+vendor/motorola/solana/proprietary/lib/libmcphal.so:/system/lib/libmcphal.so \
+vendor/motorola/solana/proprietary/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
+
 
