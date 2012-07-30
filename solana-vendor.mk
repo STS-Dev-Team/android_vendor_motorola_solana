@@ -28,4 +28,4 @@ PRODUCT_COPY_FILES := \
 #DEVICE_PACKAGE_OVERLAYS := vendor/motorola/solana/overlay
 
 $(call inherit-product, vendor/motorola/solana/solana-vendor-blobs.mk)
-#$(call inherit-product, vendor/motorola/solana/ducati-full.mk)
+$(call inherit-product, vendor/motorola/solana/ducati-full_solana.mk)
