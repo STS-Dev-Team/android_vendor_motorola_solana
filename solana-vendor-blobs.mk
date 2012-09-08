@@ -85,6 +85,25 @@ $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/p
 $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
 $(VENDOR_BLOB_FOLDER)/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
 
+# system/usr/*
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/usr/idc/cpcap-key.idc:system/usr/idc/cpcap-key.idc \
+$(VENDOR_BLOB_FOLDER)/usr/idc/light-prox.idc:system/usr/idc/light-prox.idc \
+$(VENDOR_BLOB_FOLDER)/usr/idc/mapphone-switch.idc:system/usr/idc/mapphone-switch.idc \
+$(VENDOR_BLOB_FOLDER)/usr/idc/omap4-keypad.idc:system/usr/idc/omap4-keypad.idc \
+$(VENDOR_BLOB_FOLDER)/usr/idc/qtouch-touchscreen.idc:system/usr/idc/qtouch-touchscreen.idc \
+$(VENDOR_BLOB_FOLDER)/usr/keychars/cpcap-key.kcm:system/usr/keychars/cpcap-key.kcm \
+$(VENDOR_BLOB_FOLDER)/usr/keychars/light-prox.kcm:system/usr/keychars/light-prox.kcm \
+$(VENDOR_BLOB_FOLDER)/usr/keychars/mapphone-switch.kcm:system/usr/keychars/mapphone-switch.kcm \
+$(VENDOR_BLOB_FOLDER)/usr/keychars/omap4-keypad.kcm:system/usr/keychars/omap4-keypad.kcm \
+$(VENDOR_BLOB_FOLDER)/usr/keychars/qtouch-touchscreen.kcm:system/usr/keychars/qtouch-touchscreen.kcm \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/light-prox.kl:system/usr/keylayout/light-prox.kl \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/mapphone-switch.kl:system/usr/keylayout/mapphone-switch.kl \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/omap4-keypad.kl:system/usr/keylayout/omap4-keypad.kl \
+$(VENDOR_BLOB_FOLDER)/usr/keylayout/qtouch-touchscreen.kl:system/usr/keylayout/qtouch-touchscreen.kl
+
 # system/lib
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/libadkutils.so:/system/lib/libadkutils.so \
