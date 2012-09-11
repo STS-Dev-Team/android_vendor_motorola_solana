@@ -34,10 +34,10 @@ $(VENDOR_BLOB_FOLDER)/bin/testpppd:/system/bin/testpppd \
 $(VENDOR_BLOB_FOLDER)/bin/tty2ttyd:/system/bin/tty2ttyd \
 $(VENDOR_BLOB_FOLDER)/bin/usbd:/system/bin/usbd \
 $(VENDOR_BLOB_FOLDER)/bin/whisperd:/system/bin/whisperd \
-$(VENDOR_BLOB_FOLDER)/bin/vpnclientpm:/system/bin/vpnclientpm \
+$(VENDOR_BLOB_FOLDER)/bin/vpnclientpm:/system/bin/vpnclientpm
 
-#$(VENDOR_BLOB_FOLDER)/etc/motorola/12m/key_code_map.txt:system/etc/motorola/12m/key_code_map.txt \
-#$(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini \
+#$(VENDOR_BLOB_FOLDER)/etc/motorola/12m/key_code_map.txt:system/etc/motorola/12m/key_code_map.txt
+#$(VENDOR_BLOB_FOLDER)/etc/wifi/wlan_fem.ini:/system/etc/wifi/wlan_fem.ini
 # system/etc
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/etc/audio_effects.conf:/system/etc/audio_effects.conf \
@@ -61,7 +61,7 @@ $(VENDOR_BLOB_FOLDER)/etc/updatecmds/google_generic_update.txt:/system/etc/updat
 $(VENDOR_BLOB_FOLDER)/etc/VideoEditorLite/mve.ini:/system/etc/VideoEditorLite/mve.ini \
 $(VENDOR_BLOB_FOLDER)/etc/vsensor.d/MeaningFulLocation.vsensor:/system/etc/vsensor.d/MeaningFulLocation.vsensor \
 $(VENDOR_BLOB_FOLDER)/etc/security/suplcerts.bks:system/etc/security/suplcerts.bks \
-$(VENDOR_BLOB_FOLDER)/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml \
+$(VENDOR_BLOB_FOLDER)/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml:system/etc/permissions/com.verizon.hardware.telephony.ehrpd.xml
 
 # system/usr
 PRODUCT_COPY_FILES += \
@@ -162,7 +162,7 @@ $(VENDOR_BLOB_FOLDER)/lib/libwbxmlparser.so:/system/lib/libwbxmlparser.so \
 $(VENDOR_BLOB_FOLDER)/lib/libWVphoneAPI.so:/system/lib/libWVphoneAPI.so \
 $(VENDOR_BLOB_FOLDER)/lib/libXmp_jni.so:/system/lib/libXmp_jni.so \
 $(VENDOR_BLOB_FOLDER)/lib/libxmpcore.so:/system/lib/libxmpcore.so \
-$(VENDOR_BLOB_FOLDER)/lib/libportaljni.so:/system/lib/libportaljni.so \
+$(VENDOR_BLOB_FOLDER)/lib/libportaljni.so:/system/lib/libportaljni.so
 
 # RIL files
 PRODUCT_COPY_FILES += \
@@ -174,19 +174,17 @@ $(VENDOR_BLOB_FOLDER)/ril/libmoto_ril.so:/system/lib/libmoto_ril.so \
 $(VENDOR_BLOB_FOLDER)/ril/libmotodbgutils.so:/system/lib/libmotodbgutils.so \
 $(VENDOR_BLOB_FOLDER)/ril/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
 $(VENDOR_BLOB_FOLDER)/ril/librds_util.so:/system/lib/librds_util.so \
-$(VENDOR_BLOB_FOLDER)/ril/libril_rds.so:/system/lib/libril_rds.so \
+$(VENDOR_BLOB_FOLDER)/ril/libril_rds.so:/system/lib/libril_rds.so
 
 # system/lib/hw
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.solana.so:/system/lib/hw/gps.solana.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/lights.solana.so:/system/lib/hw/lights.solana.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.solana.so:/system/lib/hw/sensors.solana.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.solana.so:/system/lib/hw/sensors.solana.so
 
 # system/xbin
 PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/xbin/drm1_func_test:/system/xbin/drm1_func_test \
-#$(VENDOR_BLOB_FOLDER)/xbin/dexdump:/system/xbin/dexdump \
-#$(VENDOR_BLOB_FOLDER)/xbin/nc:/system/xbin/nc \
+$(VENDOR_BLOB_FOLDER)/xbin/drm1_func_test:/system/xbin/drm1_func_test
 
 # Load TCMD libs
 PRODUCT_COPY_FILES += \
@@ -194,6 +192,6 @@ $(VENDOR_BLOB_FOLDER)/lib/libaudiotcmd.so:/system/lib/libaudiotcmd.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfm_stack.so:/system/lib/libfm_stack.so \
 $(VENDOR_BLOB_FOLDER)/lib/libfmchr.so:/system/lib/libfmchr.so \
 $(VENDOR_BLOB_FOLDER)/lib/libmcphal.so:/system/lib/libmcphal.so \
-$(VENDOR_BLOB_FOLDER)/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so \
+$(VENDOR_BLOB_FOLDER)/lib/libtcmdcameraservice.so:/system/lib/libtcmdcameraservice.so
 
 
