@@ -180,7 +180,6 @@ $(VENDOR_BLOB_FOLDER)/ril/libril_rds.so:/system/lib/libril_rds.so
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/lib/hw/gps.solana.so:/system/lib/hw/gps.solana.so \
 $(VENDOR_BLOB_FOLDER)/lib/hw/lights.solana.so:/system/lib/hw/lights.solana.so \
-$(VENDOR_BLOB_FOLDER)/lib/hw/sensors.solana.so:/system/lib/hw/sensors.solana.so
 
 # system/xbin
 PRODUCT_COPY_FILES += \
