@@ -80,7 +80,6 @@ $(VENDOR_BLOB_FOLDER)/usr/keychars/light-prox.kcm:system/usr/keychars/light-prox
 $(VENDOR_BLOB_FOLDER)/usr/keychars/mapphone-switch.kcm:system/usr/keychars/mapphone-switch.kcm \
 $(VENDOR_BLOB_FOLDER)/usr/keychars/omap4-keypad.kcm:system/usr/keychars/omap4-keypad.kcm \
 $(VENDOR_BLOB_FOLDER)/usr/keychars/qtouch-touchscreen.kcm:system/usr/keychars/qtouch-touchscreen.kcm \
-$(VENDOR_BLOB_FOLDER)/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
 $(VENDOR_BLOB_FOLDER)/usr/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
 $(VENDOR_BLOB_FOLDER)/usr/keylayout/light-prox.kl:system/usr/keylayout/light-prox.kl \
 $(VENDOR_BLOB_FOLDER)/usr/keylayout/mapphone-switch.kl:system/usr/keylayout/mapphone-switch.kl \
