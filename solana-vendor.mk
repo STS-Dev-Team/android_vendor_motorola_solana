@@ -17,4 +17,4 @@
 
 $(call inherit-product, vendor/motorola/solana/solana-vendor-blobs.mk)
 
-$(call inherit-product, vendor/motorola/common/common-vendor.mk)
+$(call inherit-product, vendor/motorola/omap4-common/common-vendor.mk)
