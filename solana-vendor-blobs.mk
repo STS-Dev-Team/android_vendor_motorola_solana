@@ -3,6 +3,8 @@ VENDOR_BLOB_FOLDER := vendor/motorola/solana/proprietary
 # system/bin
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/bin/akmd8975:/system/bin/akmd8975 \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain.bin:/system/bin/ap_gain.bin \
+$(VENDOR_BLOB_FOLDER)/bin/ap_gain_mmul.bin:/system/bin/ap_gain_mmul.bin \
 $(VENDOR_BLOB_FOLDER)/bin/batch:/system/bin/batch \
 $(VENDOR_BLOB_FOLDER)/bin/battd:/system/bin/battd \
 $(VENDOR_BLOB_FOLDER)/bin/chat-ril:/system/bin/chat-ril \
@@ -61,6 +63,11 @@ $(VENDOR_BLOB_FOLDER)/lib/libtpa.so:/system/lib/libtpa.so \
 $(VENDOR_BLOB_FOLDER)/lib/libtpa_core.so:/system/lib/libtpa_core.so \
 $(VENDOR_BLOB_FOLDER)/lib/libui3d.so:/system/lib/libui3d.so
 
+# system/lib/hw
+PRODUCT_COPY_FILES += \
+$(VENDOR_BLOB_FOLDER)/lib/hw/audio.primary.omap4.so:/system/lib/hw/audio.primary.omap4.so \
+$(VENDOR_BLOB_FOLDER)/lib/hw/gps.targa.so:/system/lib/hw/gps.solana.so
+
 # RIL files (from solana 5.7.906)
 PRODUCT_COPY_FILES += \
 $(VENDOR_BLOB_FOLDER)/ril/libmot_atcmd.so:/system/lib/libmot_atcmd.so \
@@ -72,7 +79,3 @@ $(VENDOR_BLOB_FOLDER)/ril/libmoto_ril.so:/system/lib/libmoto_ril.so \
 $(VENDOR_BLOB_FOLDER)/ril/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \
 $(VENDOR_BLOB_FOLDER)/ril/librds_util.so:/system/lib/librds_util.so \
 $(VENDOR_BLOB_FOLDER)/ril/libril_rds.so:/system/lib/libril_rds.so
-
-# system/lib/hw (from solana 5.7.906)
-PRODUCT_COPY_FILES += \
-$(VENDOR_BLOB_FOLDER)/lib/hw/gps.solana.so:/system/lib/hw/gps.solana.so
